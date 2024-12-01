@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consistencia Interna y Estabilidad Temporal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.png" alt="Logo" />
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="nav-menu">
+        <a href="./huawei.html">HUAWEI P. 70 ULTRA</a>
+        <a href="#">PIXEL 9</a>
+        <a href="#">IPHONE 16</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="left">
+        <h2>Tops SmarthPhones con las mejores cámaras 2024</h2>
+        <p>
+          En esta página se mostrará el top de las mejores cámaras del mercado. Según DxOMark, se tomaron en consideración los siguientes elementos para la evaluación:
+          <ul>
+            <li><span class="li_strong">Calidad de imagen:</span> nitidez, detalle y precisión de color en diferentes condiciones de iluminación.</li>
+            <li><span class="li_strong">Rendimient en video:</span> capacidad para grabar videos con alta resolución y estabilización.</li>
+            <li><span class="li_strong">Capacidades de zoom:</span> calidad y claridad en el uso de zoom óptico y digital.</li>
+            <li><span class="li_strong">Funciones adicionales:</span> características innovadoras como inteligencia artificial, modos nocturnos y otras mejoras fotográficas.</li>
+          </ul>
+        </p>
+      </section>
+      <article class="cont-right">
+        <h2>Especificaciones</h2>
+        <div class="right">
+          <p>
+            En este apartado se mostrará la especificación de cada uno de los tops smartphones.
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <span id="colors" class="tag-1" href="#">#etiquetas</span>
+      <span id="colors" class="tag-2" href="#">#etiquetas</span>
+      <span id="colors" class="tag-3" href="#">#etiquetas</span>
+      <span id="colors" class="tag-4" href="#">#etiquetas</span>
+      <span id="colors" class="tag-5" href="#">#etiquetas</span>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        if (navMenu.style.display === "flex") {
+          navMenu.style.display = "none";
+        } else {
+          navMenu.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>
