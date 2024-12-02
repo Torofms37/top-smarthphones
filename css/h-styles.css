@@ -23,18 +23,7 @@ header img {
   font-weight: 600;
   color: #adf7b6;
 }
-.menu-toggle {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  align-items: center;
-}
-.menu-toggle span {
-  background: #ccc;
-  width: 25px;
-  height: 2px;
-  margin: 3px 0;
-}
+
 nav {
   display: none;
   flex-direction: column;
@@ -249,18 +238,14 @@ h6 a {
 }
 
 /* Media Queries for larger screens */
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   nav {
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
-  .menu-toggle {
-    display: none;
-  }
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
+  .left, .right {
+    width: 95%;
   }
 
 }
