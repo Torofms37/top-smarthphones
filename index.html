@@ -8,20 +8,15 @@
   </head>
   <body>
     <header>
-      <img src="./img/logo.png" alt="Logo" />
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav id="nav-menu">
+      <a class="logo" href="./index.html"> <img src="./img/logo.png" alt="Logo" /> </a>
+      <nav>
         <a href="./huawei.html">HUAWEI P. 70 ULTRA</a>
         <a href="./pixel.html">PIXEL 9</a>
         <a href="#">IPHONE 16</a>
       </nav>
     </header>
     <main class="container">
-      <section class="left">
+      <section class="cont-info">
         <h2>Tops SmarthPhones con las mejores cámaras 2024</h2>
         <p>
           En esta página se mostrará el top de las mejores cámaras del mercado. Según DxOMark, se tomaron en consideración los siguientes elementos para la evaluación:
@@ -32,33 +27,29 @@
             <li><span class="li_strong">Funciones adicionales:</span> características innovadoras como inteligencia artificial, modos nocturnos y otras mejoras fotográficas.</li>
           </ul>
         </p>
-      </section>
-      <article class="cont-right">
-        <h2>Especificaciones</h2>
-        <div class="right">
-          <p>
-            En este apartado se mostrará la especificación de cada uno de los tops smartphones.
-          </p>
+        <hr />
+        <div class="images">
+          <a href="./huawei.html"><img src="./img/huawei.png" alt=""></a>
+          <a href="./pixel.html"><img src="./img/pixel.png" alt=""></a>
+          <a href="./iphone.html"><img src="./img/iphone16.png" alt=""></a>
         </div>
-      </article>
-    </main>
-    <footer>
-      <span id="colors" class="tag-1" href="#">#etiquetas</span>
-      <span id="colors" class="tag-2" href="#">#etiquetas</span>
-      <span id="colors" class="tag-3" href="#">#etiquetas</span>
-      <span id="colors" class="tag-4" href="#">#etiquetas</span>
-      <span id="colors" class="tag-5" href="#">#etiquetas</span>
-    </footer>
+      </section>
 
-    <script>
-      function toggleMenu() {
-        const navMenu = document.getElementById("nav-menu");
-        if (navMenu.style.display === "flex") {
-          navMenu.style.display = "none";
-        } else {
-          navMenu.style.display = "flex";
-        }
-      }
-    </script>
+    </main>
+    <footer class="footer"> 
+      <div class="main-text"> 
+        <div class="slide-container"> 
+          <p id="colors" class="tag-2" href="#">#TOPSMARTPHONES</p> 
+          <p id="colors" class="tag-3" href="#">#BESTCAMERA</p> 
+          <p id="colors" class="tag-4" href="#">#GOOGLE</p> 
+          <p id="colors" class="tag-5" href="#">#HUAWEI</p> 
+          <p id="colors" class="tag-1" href="#">#APPLE</p> 
+        </div> 
+      </div> 
+      <div class="divider"></div> 
+      <div class="small-text"> 
+        <p>Made by Torofms37 🐂</p> 
+      </div> 
+    </footer>
   </body>
 </html>

@@ -5,6 +5,16 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1; /* Permite que el contenedor principal crezca y ocupe el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
 }
 header {
   display: flex;
@@ -41,12 +51,6 @@ nav a {
   text-decoration: none;
   font-size: 18px;
   margin: 10px 0;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 hr {
@@ -158,19 +162,56 @@ h6 a {
   border: 1px solid #222;
 }
 
-footer {
-  position: absolute;
-  background-color: #222;
+/* Footer con etiquetas que se deslizan con el made by */
+.footer {
   width: 100%;
-  bottom: 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #555;
+  position: relative;
   box-sizing: border-box;
-  padding: 15px;
-  text-align: center;
 }
-footer a {
-  color: #ccc;
-  text-decoration: none;
-  margin: 0 5px;
+
+.footer .main-text {
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.footer .main-text .slide-container {
+  white-space: nowrap;
+  animation: slide 10s linear infinite;
+}
+
+.footer .main-text p {
+  display: inline-block;
+  margin: 0;
+  padding-right: 20px; /* Espacio entre los elementos */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.footer .divider {
+  width: 1px;
+  background-color: #555;
+  height: 100%;
+  position: absolute;
+  left: 80%;
+  top: 0;
+}
+
+.footer .small-text {
+  color: #6e6e6e;
+  width: 20%;
+  text-align: center;
+  padding-left: 10px;
 }
 .chat-icon {
   position: fixed;

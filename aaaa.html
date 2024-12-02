@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid #ccc;
+            padding: 10px;
+            position: relative;
+        }
+        .footer .main-text {
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .footer .main-text p {
+            display: inline-block;
+            padding-left: 80%; /* Espacio reducido antes de que comience el texto */
+            animation: slide 5s linear infinite; /* Tiempo de animación reducido */
+        }
+        @keyframes slide {
+            0% { transform: translateX(100%); } /* Empieza desde fuera de la vista */
+            100% { transform: translateX(-100%); } /* Sale completamente de la vista */
+        }
+        .footer .divider {
+            width: 1px;
+            background-color: red;
+            height: 100%;
+            position: absolute;
+            left: 80%;
+            top: 0;
+        }
+        .footer .small-text {
+            width: 20%;
+            text-align: right;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="main-text">
+            <p>Texto deslizante que aparece y desaparece recorriendo el 80% del ancho del footer.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="small-text">
+            <p>Texto pequeño</p>
+        </div>
+    </footer>
+</body>
+</html>

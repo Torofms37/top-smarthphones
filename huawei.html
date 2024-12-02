@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <img src="./img/logo.png" alt="Logo" />
+      <a class="logo" href="./index.html"> <img src="./img/logo.png" alt="Logo" /> </a>
       <div class="menu-toggle" onclick="toggleMenu()">
         <span></span>
         <span></span>
@@ -86,23 +86,20 @@
         </div>
       </article>
     </main>
-    <footer>
-      <span id="colors" class="tag-1" href="#">#etiquetas</span>
-      <span id="colors" class="tag-2" href="#">#etiquetas</span>
-      <span id="colors" class="tag-3" href="#">#etiquetas</span>
-      <span id="colors" class="tag-4" href="#">#etiquetas</span>
-      <span id="colors" class="tag-5" href="#">#etiquetas</span>
+    <footer class="footer"> 
+      <div class="main-text"> 
+        <div class="slide-container"> 
+          <p id="colors" class="tag-2" href="#">#TOPSMARTPHONES</p> 
+          <p id="colors" class="tag-3" href="#">#BESTCAMERA</p> 
+          <p id="colors" class="tag-4" href="#">#GOOGLE</p> 
+          <p id="colors" class="tag-5" href="#">#HUAWEI</p> 
+          <p id="colors" class="tag-1" href="#">#APPLE</p> 
+        </div> 
+      </div> 
+      <div class="divider"></div> 
+      <div class="small-text"> 
+        <p>Made by Torofms37 🐂</p> 
+      </div> 
     </footer>
-
-    <script>
-      function toggleMenu() {
-        const navMenu = document.getElementById("nav-menu");
-        if (navMenu.style.display === "flex") {
-          navMenu.style.display = "none";
-        } else {
-          navMenu.style.display = "flex";
-        }
-      }
-    </script>
   </body>
 </html>
