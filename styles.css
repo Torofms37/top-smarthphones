@@ -35,17 +35,11 @@ header {
 header img {
   height: 40px;
 }
-
-nav {
-  display: none;
-  flex-direction: column;
-}
-
 nav a {
   color: #ccc;
   text-decoration: none;
   font-size: 18px;
-  margin: 10px 0;
+  margin-left: 20px;
 }
 
 hr {
@@ -83,16 +77,16 @@ h6 a {
 
 .images {
   width: 100%;
-  display: flex
-;
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  gap: 80px;
 }
 
 .images img {
   display: inline;
   width: 200px;
-  margin-left: 90px;
 }
 
 /* Footer con etiquetas que se deslizan con el made by */
